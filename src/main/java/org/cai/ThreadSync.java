@@ -1,16 +1,15 @@
 package org.cai;
 
-import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
 /**
- * 本次训练内容：模拟现场唤醒，暂停
+ * 训练内容：模拟现场唤醒，暂停
  *
  * @Author: caisijun
  * @Date: 2020/11/20 0020
  */
-public class t1 {
-
+public class ThreadSync {
+    private static native void registerNatives();
     /*
         训练课题：两个线程 依次打印 A1B2C3D4
      */
@@ -117,7 +116,6 @@ public class t1 {
      * @param args
      */
     public static void main(String[] args) {
-
         //1.synchronized 运行结果：A1B2C3D4
         /*thread_synchronized_w();
         thead_synchronized_n();*/
