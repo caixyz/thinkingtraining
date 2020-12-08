@@ -4,7 +4,6 @@ import org.junit.Test;
 import java.util.Arrays;
 import java.util.List;
 import java.util.function.Consumer;
-import java.util.function.Function;
 import java.util.function.Predicate;
 import java.util.function.Supplier;
 import java.util.stream.Collectors;
@@ -107,13 +106,13 @@ public class JDK8_Function {
     @Test
     public void function() {
         List<Integer> list = Arrays.asList(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
-        Function<Integer, String> function = new Function<Integer, String>() {
+        java.util.function.Function<Integer, String> function = new java.util.function.Function<Integer, String>() {
             @Override
             public String apply(Integer integer) {
                 return "f" + integer;
             }
         };
-        Function<Integer, String> function2 = (t)->"fun"+t;
+        java.util.function.Function<Integer, String> function2 = (t)->"fun"+t;
 
         List<String> newList = list.stream().map(function2).collect(Collectors.toList());
         newList.stream().forEach(System.out::println);
