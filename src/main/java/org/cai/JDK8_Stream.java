@@ -19,12 +19,35 @@ public class JDK8_Stream {
     @Before
     public void inid(){
         appleList = Arrays.asList(
-                new Apple("", 10),
-                new Apple("green", 20),
-                new Apple("red", 30),
+                new Apple("", 1),
+                new Apple("green", 2),
+                new Apple("red", 3),
+                new Apple("green", 4),
+                new Apple("red", 5),
+
+                new Apple("green", 6),
+                new Apple("green", 7),
+                new Apple("red", 8),
                 new Apple("green", 9),
-                new Apple("red", 6),
-                new Apple("green", 50)
+                new Apple("red", 10),
+
+                new Apple("green", 11),
+                new Apple("green", 12),
+                new Apple("red", 13),
+                new Apple("green", 14),
+                new Apple("red", 15),
+
+                new Apple("green", 16),
+                new Apple("green", 17),
+                new Apple("red", 18),
+                new Apple("green", 19),
+                new Apple("red", 20),
+
+                new Apple("green", 21),
+                new Apple("green", 22),
+                new Apple("red", 23),
+                new Apple("green", 24),
+                new Apple("red", 5)
         );
     }
 
@@ -152,10 +175,13 @@ public class JDK8_Stream {
 
     /**
      * （六）skip 跳过 n 个数据
+     * 模拟分页
       */
     @Test
     public void skip(){
-        appleList.stream().skip(3).forEach(System.out::println);
+        int current=0;
+        int size=10;
+        appleList.stream().skip(current*10).limit(size).forEach(System.out::println);
     }
 
     /**
@@ -166,6 +192,21 @@ public class JDK8_Stream {
     @Test
     public void sorted() {
         List<Apple> list = appleList.stream().sorted((a, b) -> a.getWeight().compareTo(b.getWeight())).collect(Collectors.toList());
+        list.stream().forEach(System.out::println);
+    }
+
+    /**
+     * （八）collect 收集
+     * 定义：
+     * <R, A> R collect(Collector<? super T, A, R> collector);
+     *
+     *  results:
+     *  Apple(color=red, weight=30)
+     *  Apple(color=red, weight=6)
+     */
+    @Test
+    public void collect(){
+        List<Apple> list=appleList.stream().filter(f->f.getColor()=="red").collect(Collectors.toList());
         list.stream().forEach(System.out::println);
     }
 
