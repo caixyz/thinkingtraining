@@ -1,6 +1,5 @@
-package org.cai;
+package org.cai.algorithm.stream;
 
-import lombok.Data;
 import org.junit.Before;
 import org.junit.Test;
 

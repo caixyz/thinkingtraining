@@ -1,11 +1,11 @@
-package org.cai;
+package org.cai.structure;
 
 /**
  * 训练内容：位 及相关运算符
  * @Author: caisijun
  * @Date: 2020/11/23 0023
  */
-public class Bit {
+public class Bit_computer {
 
 
     public static void main(String[] args) {
@@ -70,19 +70,5 @@ public class Bit {
         System.out.println(4>>2);
 
 
-    }
-
-    /**
-     * 字符串转字节流字符串
-     * @param str
-     * @return
-     */
-    private static String strToBinstr(String str) {
-        char[] strChar = str.toCharArray();
-        String result = "";
-        for (int i = 0; i < strChar.length; i++) {
-            result += Integer.toBinaryString(strChar[i]) + " ";
-        }
-        return result;
     }
 }

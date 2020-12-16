@@ -1,4 +1,4 @@
-package org.cai;
+package org.cai.algorithm.stream;
 
 import org.junit.Test;
 import java.util.Arrays;

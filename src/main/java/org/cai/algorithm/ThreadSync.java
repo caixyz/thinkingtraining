@@ -1,4 +1,4 @@
-package org.cai;
+package org.cai.algorithm;
 
 import java.util.concurrent.locks.ReentrantLock;
 
@@ -126,16 +126,6 @@ public class ThreadSync {
         //B2
         //C3
         //D4
-        boolean isFack=(false&false)==true;
-        if(isFack){
-            System.out.println(true);
-        }
-
-        int iii=1;
-        int xxx=2;
-        if((xxx=iii)>0) {
-            System.out.println(true);
-        }
         thead_lock_w();
         thead_lock_n();
     }
