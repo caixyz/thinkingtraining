@@ -103,13 +103,13 @@ public class JDK8_Stream {
      *
      *
      * results：
-     * Apple(color=null, weight=10)
-     * Apple(color=green, weight=20)
-     * Apple(color=red, weight=30)
-     * Apple(color=green, weight=9)
-     * Apple(color=red, weight=6)
-     * Apple(color=green, weight=50)
-     * Apple(color=te, weight=33)
+     * iPhone(color=null, weight=10)
+     * iPhone(color=green, weight=20)
+     * iPhone(color=red, weight=30)
+     * iPhone(color=green, weight=9)
+     * iPhone(color=red, weight=6)
+     * iPhone(color=green, weight=50)
+     * iPhone(color=te, weight=33)
      */
     @Test
     public void flatMap() {
@@ -124,9 +124,9 @@ public class JDK8_Stream {
      *  定义：Stream<T> peek(Consumer<? super T> action);
      * 配合 collect(Collectors.toList()
      * results:
-     * Apple(color=青色, weight=20)
-     * Apple(color=青色, weight=9)
-     * Apple(color=青色, weight=50)
+     * iPhone(color=青色, weight=20)
+     * iPhone(color=青色, weight=9)
+     * iPhone(color=青色, weight=50)
      */
     @Test
     public void peek() {
@@ -201,8 +201,8 @@ public class JDK8_Stream {
      * <R, A> R collect(Collector<? super T, A, R> collector);
      *
      *  results:
-     *  Apple(color=red, weight=30)
-     *  Apple(color=red, weight=6)
+     *  iPhone(color=red, weight=30)
+     *  iPhone(color=red, weight=6)
      */
     @Test
     public void collect(){

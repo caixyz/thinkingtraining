@@ -34,8 +34,8 @@ public class JDK8_Collectors {
      *     groupingBy(Function<? super T, ? extends K> classifier)
      *
      *  results:
-     *  {red=[Apple(color=red, weight=30), Apple(color=red, weight=6)], =[Apple(color=, weight=10)],
-     *  green=[Apple(color=green, weight=20), Apple(color=green, weight=9), Apple(color=green, weight=50)]}
+     *  {red=[iPhone(color=red, weight=30), iPhone(color=red, weight=6)], =[iPhone(color=, weight=10)],
+     *  green=[iPhone(color=green, weight=20), iPhone(color=green, weight=9), iPhone(color=green, weight=50)]}
      *
      *  other：Optional.ofNullable 过滤null数据 key
      */
@@ -54,7 +54,7 @@ public class JDK8_Collectors {
      * 定义：public static <T> Collector<T, ?, Map<Boolean, List<T>>> partitioningBy(Predicate<? super T> predicate)
      * results：
      * {false=[1, 3, 5, 7, 9], true=[2, 4, 6, 8]}
-     * {false=[Apple(color=null, weight=10), Apple(color=green, weight=9), Apple(color=red, weight=6)], true=[Apple(color=green, weight=20), Apple(color=red, weight=30), Apple(color=green, weight=50)]}
+     * {false=[iPhone(color=null, weight=10), iPhone(color=green, weight=9), iPhone(color=red, weight=6)], true=[iPhone(color=green, weight=20), iPhone(color=red, weight=30), iPhone(color=green, weight=50)]}
      */
     @Test
     public void partitioningBy(){
