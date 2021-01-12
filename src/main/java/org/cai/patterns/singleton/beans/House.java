@@ -1,4 +1,4 @@
-package org.cai.patterns.singleton;
+package org.cai.patterns.singleton.beans;
 
 /**
  * 调用 获取实例方法时 创建对象，属于所谓的 lazy（懒汉模式）

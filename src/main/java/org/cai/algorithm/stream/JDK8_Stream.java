@@ -88,8 +88,8 @@ public class JDK8_Stream {
      * 50
      */
     @Test
-    public void map(){
-       Stream<Integer> intStream= appleList.stream().map(m->m.getWeight());
+    public void map() {
+        Stream<Integer> intStream = appleList.stream().map(m -> m.getWeight());
         intStream.forEach(System.out::println);
     }
 
@@ -205,8 +205,9 @@ public class JDK8_Stream {
      *  iPhone(color=red, weight=6)
      */
     @Test
-    public void collect(){
-        List<Apple> list=appleList.stream().filter(f->f.getColor()=="red").collect(Collectors.toList());
+    public void collect() {
+        List<Apple> list = appleList.stream().filter(f -> f.getColor().equals("red")).collect(Collectors.toList());
+        System.out.println("=========================");
         list.stream().forEach(System.out::println);
     }
 

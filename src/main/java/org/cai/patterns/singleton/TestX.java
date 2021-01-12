@@ -1,5 +1,8 @@
 package org.cai.patterns.singleton;
 
+import org.cai.patterns.singleton.beans.Bird;
+import org.cai.patterns.singleton.beans.House;
+import org.cai.patterns.singleton.beans.Panda;
 import org.junit.Test;
 
 /**

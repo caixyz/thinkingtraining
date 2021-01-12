@@ -1,4 +1,4 @@
-package org.cai.patterns.singleton;
+package org.cai.patterns.singleton.beans;
 
 /**
  * 在调用实例方法前，对象已经创建好了，所以 属于”恶汉模式“

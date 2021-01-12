@@ -20,7 +20,15 @@ import org.junit.Test;
 public class TestAbstractFactory {
     @Test
     public void Test1(){
-        AbstractFactory huaweiFactory=new HUAWEIFactory();
+        String x="2021-01-07";
+        String y="2020-01-07";
+        System.out.println(y.substring(5));
+        if(x.indexOf(y.substring(5))>-1)
+            System.out.println(true);
+        else
+            System.out.println(false);
+
+       /* AbstractFactory huaweiFactory=new HUAWEIFactory();
         AbstractFactory appleFactory=new AppleFactory();
 
         Phone p40= huaweiFactory.getPhone();
@@ -33,6 +41,6 @@ public class TestAbstractFactory {
         Phone ipone=appleFactory.getPhone();
         Computer mac=appleFactory.getComputer();
         ipone.printPhoneConf();
-        mac.printComputerConf();
+        mac.printComputerConf();*/
     }
 }

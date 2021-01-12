@@ -1,4 +1,4 @@
-package org.cai.patterns.singleton;
+package org.cai.patterns.singleton.beans;
 
 /**
  * 属于lazy模式，但是是线程安全
