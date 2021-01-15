@@ -8,6 +8,7 @@ import org.cai.patterns.prototype.beans.Square;
 import java.util.Hashtable;
 
 /**
+ * 形状缓存
  * @Author: caisijun
  * @Date: 2021/1/12 0012
  */
