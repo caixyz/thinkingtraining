@@ -1,6 +1,6 @@
-package org.cai.patterns.Builder.beans;
+package org.cai.patterns.builder.beans;
 
-import org.cai.patterns.Builder.service.ColdDrink;
+import org.cai.patterns.builder.service.ColdDrink;
 
 /**
  * @Author: caisijun

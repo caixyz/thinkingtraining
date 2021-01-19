@@ -1,6 +1,6 @@
-package org.cai.patterns.Builder.build;
+package org.cai.patterns.builder.build;
 
-import org.cai.patterns.Builder.service.FoodItems;
+import org.cai.patterns.builder.service.FoodItems;
 
 import java.util.ArrayList;
 import java.util.List;

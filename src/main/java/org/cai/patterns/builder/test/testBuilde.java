@@ -1,7 +1,7 @@
-package org.cai.patterns.Builder.test;
+package org.cai.patterns.builder.test;
 
-import org.cai.patterns.Builder.build.MealBuilde;
-import org.cai.patterns.Builder.build.MealDisk;
+import org.cai.patterns.builder.build.MealBuilde;
+import org.cai.patterns.builder.build.MealDisk;
 import org.junit.Test;
 
 /**

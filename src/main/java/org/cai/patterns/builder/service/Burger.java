@@ -1,6 +1,6 @@
-package org.cai.patterns.Builder.service;
+package org.cai.patterns.builder.service;
 
-import org.cai.patterns.Builder.service.impl.Wrapper;
+import org.cai.patterns.builder.service.impl.Wrapper;
 
 /**
  * 汉堡类产品抽象类

@@ -1,6 +1,6 @@
-package org.cai.patterns.Builder.service.impl;
+package org.cai.patterns.builder.service.impl;
 
-import org.cai.patterns.Builder.service.Packing;
+import org.cai.patterns.builder.service.Packing;
 
 /**
  *  实现包装（瓶子容器）

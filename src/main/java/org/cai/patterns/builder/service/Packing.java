@@ -1,4 +1,4 @@
-package org.cai.patterns.Builder.service;
+package org.cai.patterns.builder.service;
 
 /**
  * @Author: caisijun

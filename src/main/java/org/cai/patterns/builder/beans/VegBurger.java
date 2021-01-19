@@ -1,7 +1,6 @@
-package org.cai.patterns.Builder.beans;
+package org.cai.patterns.builder.beans;
 
-import org.cai.patterns.Builder.service.Burger;
-import org.cai.patterns.Builder.service.Packing;
+import org.cai.patterns.builder.service.Burger;
 
 /**
  * @Author: caisijun

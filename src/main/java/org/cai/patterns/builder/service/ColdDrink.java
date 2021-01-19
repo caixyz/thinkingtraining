@@ -1,6 +1,6 @@
-package org.cai.patterns.Builder.service;
+package org.cai.patterns.builder.service;
 
-import org.cai.patterns.Builder.service.impl.Bottle;
+import org.cai.patterns.builder.service.impl.Bottle;
 
 /**
  * 冷饮类 商品

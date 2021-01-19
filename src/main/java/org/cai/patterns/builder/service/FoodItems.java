@@ -1,6 +1,4 @@
-package org.cai.patterns.Builder.service;
-
-import java.util.List;
+package org.cai.patterns.builder.service;
 
 /**
  * 盘子里的 食品项

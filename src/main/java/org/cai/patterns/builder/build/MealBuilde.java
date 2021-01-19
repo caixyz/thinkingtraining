@@ -1,8 +1,8 @@
-package org.cai.patterns.Builder.build;
+package org.cai.patterns.builder.build;
 
-import org.cai.patterns.Builder.beans.MeatBurger;
-import org.cai.patterns.Builder.beans.SoybeanMilk;
-import org.cai.patterns.Builder.beans.VegBurger;
+import org.cai.patterns.builder.beans.MeatBurger;
+import org.cai.patterns.builder.beans.SoybeanMilk;
+import org.cai.patterns.builder.beans.VegBurger;
 
 /**
  * @Author: caisijun
