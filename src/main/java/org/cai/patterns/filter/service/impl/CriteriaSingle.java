@@ -1,0 +1,20 @@
+package org.cai.patterns.filter.service.impl;
+
+import org.cai.patterns.filter.beans.Person;
+import org.cai.patterns.filter.service.Criteria;
+
+import java.util.List;
+import java.util.stream.Collectors;
+
+/**
+ * 过滤single数据
+ * @Author: caisijun
+ * @Date: 2021/1/22 0022
+ */
+public class CriteriaSingle implements Criteria {
+
+    @Override
+    public List<Person> meetCriteria(List<Person> personList) {
+        return personList.stream().filter(person -> person.getMaritalStatus().equalsIgnoreCase("SINGLE")).collect(Collectors.toList());
+    }
+}
